@@ -1,0 +1,12 @@
+{
+    "wordToSearch": "Sonoma",
+    "emailSettings": {
+        "username": "your_email@example.com",
+        "password": "your_password",
+        "smtpServer": "smtp.example.com",
+        "port": "25"
+    },
+    "recipients": [
+        "recipient@example.com"
+    ]
+}
