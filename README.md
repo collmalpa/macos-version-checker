@@ -52,24 +52,6 @@ This PowerShell script checks for the latest version of macOS on the official Ap
            ```
         5. Save the task.
 
-## Script Details
-
-- **Variables**:
-  - `wordToSearch`: The macOS version keyword to search for, configured in `config.json`.
-  - `emailSettings`: Email credentials and server details for sending notifications, stored in `config.json`.
-  - `recipients`: List of email recipients, specified in `config.json`.
-  
-- **Function**:
-  - `send_email`: Sends an email with the specified subject, body, and email credentials.
-
-- **Operation**:
-  - Checks if the `macOSVersions.txt` file exists; if not, it creates it.
-  - Reads the old macOS version data from `macOSVersions.txt`.
-  - Fetches the current macOS version data from the Apple support page.
-  - Compares the old and new macOS version counts.
-  - If a new version is detected, constructs the email body and sends a notification.
-  - Updates `macOSVersions.txt` and `LastMacOS.txt` with the new data.
-
 ## Note
 
 The method of sending notifications via email through SMTP is considered outdated. This script demonstrates how it can be implemented in PowerShell, but for modern applications, other notification methods such as APIs or dedicated email services are recommended.
